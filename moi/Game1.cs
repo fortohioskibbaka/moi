@@ -14,6 +14,11 @@ namespace moi
         Texture2D dino;
         Texture2D gun;
         Texture2D bet;
+        Texture2D belk;
+        Texture2D fort;
+       Texture2D emac;
+        Texture2D big;
+        Texture2D mag;
 
         public Game1()
         {
@@ -32,7 +37,7 @@ namespace moi
 
             _graphics.ApplyChanges();
 
-            this.Window.Title = "i hope patrick mahomie dies ";
+            this.Window.Title = " first project ";
 
             base.Initialize();
 
@@ -47,6 +52,12 @@ namespace moi
             dino = Content.Load<Texture2D>("dino");
             gun = Content.Load<Texture2D>("gun");
             bet = Content.Load<Texture2D>("bet");
+            belk = Content.Load<Texture2D>("belk");
+            fort = Content.Load<Texture2D>("fort");
+            emac = Content.Load<Texture2D>("emac");
+            big= Content.Load<Texture2D>("big");
+
+            mag = Content.Load<Texture2D>("mag");
 
 
         }
@@ -67,15 +78,20 @@ namespace moi
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
+            _spriteBatch.Draw(fort, new Vector2(0, 0), Color.White);
+           
 
-            _spriteBatch.Draw(dino, new Vector2(10, 10), Color.White);
+            
 
-            _spriteBatch.Draw(dino, new Vector2(500, 300), Color.MediumVioletRed);
+            _spriteBatch.Draw(gun, new Vector2(500, 100), Color.White);
 
-            _spriteBatch.Draw(gun, new Vector2(500, 100), Color.MediumVioletRed);
+            
+            _spriteBatch.Draw(belk, new Vector2(350, 200), Color.White);
 
-            _spriteBatch.Draw(bet, new Vector2(300, 400), Color.MediumVioletRed);
+            _spriteBatch.Draw(emac, new Vector2(550, 200), Color.White);
 
+            _spriteBatch.Draw(big , new Vector2(100, 200), Color.White);
+            _spriteBatch.Draw(mag, new Vector2(650, 250), Color.White);
             _spriteBatch.End();
 
             base.Draw(gameTime);

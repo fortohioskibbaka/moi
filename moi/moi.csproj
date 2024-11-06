@@ -11,7 +11,10 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Content\cart.png" />
+    <None Remove="Content\cart1.png" />
     <None Remove="Content\download.jfif" />
+    <None Remove="Content\line.png" />
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
   </ItemGroup>
